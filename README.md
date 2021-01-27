@@ -8,9 +8,10 @@
 Deep learning has become one of the emerging research fields. In deep learning, many applications are expected to apply on edge computing devices or mobile devices. However, due to the intrinsic nature of deep neural network, numerous parameters and calculations make it difficult for real-time performance on edge devices. Therefore, we need to compress the neural network, and simultaneously maintain the neural network at a certain performance. Among many model compression methods, we chose to use knowledge distillation as our method. It is applied to the task of instance segmentation to improve the accuracy of lightweight models with relatively fewer parameters than its original one. In the experiment, we can find that our method is very effective for improving the performance of the model and thus reveal the feasibility for real-time applications.
 
 ### Environment
-- V100 or Titan Xp GPU
+- V100 GPU
 - CUDA 9.0 
 - cuDNN 7.5.1 
+- python 3.5
 - pytorch 1.1.0 [wheel file](https://download.pytorch.org/whl/cu90/torch-1.1.0-cp35-cp35m-linux_x86_64.whl)
 - torchvision 0.3.0 [wheel file](https://download.pytorch.org/whl/cu90/torchvision-0.3.0-cp35-cp35m-manylinux1_x86_64.whl)
 - Implemented on [CenterMask](https://github.com/youngwanLEE/CenterMask)  
