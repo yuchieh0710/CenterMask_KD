@@ -19,7 +19,7 @@ Deep learning has become one of the emerging research fields. In deep learning, 
 Check [INSTALL.md](INSTALL.md) for installation instructions which is orginate from [CenterMask](https://github.com/youngwanLEE/CenterMask).
 
 ## Training
-Modify basic training setting in [train_net.py](tools/train_net.py) 'main()'
+Modify basic training setting in [train_net.py](tools/train_net.py) [``main()``](https://github.com/yuchieh0710/centermask_good/blob/master/tools/train_net.py#L142)
 
 ```bash
 python tools/train_net.py  
