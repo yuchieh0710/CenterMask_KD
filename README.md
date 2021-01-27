@@ -34,6 +34,7 @@ This implementation has been tested on the [MSCOCO](https://cocodataset.org/#dow
          ├─ 000000401299.jpg
          ├─ 000000388903.jpg
          └─ ... 
+```
          
 ## Training
 Modify basic training setting in [train_net.py](tools/train_net.py) [``main()``](https://github.com/yuchieh0710/centermask_good/blob/master/tools/train_net.py#L142)
