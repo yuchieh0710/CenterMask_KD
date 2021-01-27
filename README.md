@@ -1,4 +1,4 @@
-# [CenterMask KD](https://arxiv.org/abs/1911.06667) : Apply Knowledge Distillation on CenterMask (Instance Segmentation)
+# CenterMask KD : Apply Knowledge Distillation on CenterMask (Instance Segmentation)
 
 
 ![architecture](architecture.png)
