@@ -1,0 +1,32 @@
+*更改儲存＆測試間隔
+CenterMask-master/maskrcnn-benchmark/config/defaults.py
+'num_class' 可更動class數量
+'_C.SOLVER.CHECKPOINT_PERIOD' 多少個 iteration 存一次 model
+'_C.SOLVER.TEST_PERIOD' 多少個 iteration 測一次
+('_C.SOLVER.CHECKPOINT_PERIOD'/'_C.SOLVER.TEST_PERIOD') 這兩個參數好像要整除,
+否則會報錯： IndexError: list index out of range
+
+
+* 換 dataset
+先把 dataset 轉換成 coco 格式後,放在 CenterMask-master/tools/datasets 之下
+更動 CenterMask-master/maskrcnn-benchmark/config/path_catlog.py 以下內容：
+
+	"coco_VOC_2012_train": {
+            "img_dir": "VOC2012/train/jpeg",
+            "ann_file": "VOC2012/train/voc2012_train.json"
+        }
+        ,
+        "coco_VOC_2012_val": {
+            "img_dir": "VOC2012/val/jpeg",
+            "ann_file": "VOC2012/val/voc2012_val.json"
+        }
+
+替換成自己 dataset 的名稱旱路徑(名稱要包含 'coco')
+再將 .yaml 檔的
+
+DATASETS:
+  TRAIN: ("coco_VOC_2012_train", "coco_VOC_2012_val")
+  TEST: ("coco_VOC_2012_val",)
+
+替換成相對應的名稱
+
