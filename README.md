@@ -21,6 +21,8 @@ Check [INSTALL.md](INSTALL.md) for installation instructions which is orginate f
 
 ## Dataset
 This implementation has been tested on the [MSCOCO](https://cocodataset.org/#download) dataset.
+
+If you want to use custom dataset you can set dataset path [paths_catalog.py](https://github.com/yuchieh0710/CenterMask_KD/blob/master/maskrcnn_benchmark/config/paths_catalog.py)
 ```bash
 # COCO dataset
    coco
