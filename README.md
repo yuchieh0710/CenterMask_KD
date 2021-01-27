@@ -47,11 +47,12 @@ python tools/train_net.py
 
 After training, you can evaluate your model in [test_net.py](tools/test_net.py) and visualize in [centermask_demo.py](demo/centermask_demo.py).
 Change trained weight path in config you choose. 
+- [GoogleDrive weight download](https://drive.google.com/drive/u/2/folders/1VOQwtSQHvwl4fsPACjuWErZFv06RdhWs)
 
 ##### For single-gpu evaluation 
+The results of test-dev can upload json file on [box result](https://competitions.codalab.org/competitions/20794#participate-get-data) & [segm result](https://competitions.codalab.org/competitions/20796#participate-get-data)
 ```bash
 python tools/test_net.py --config-file "configs/centermask/centermask_V_19_eSE_FPN_lite_res600_ms_bs16_4x.yaml" 
-The results of test-dev can upload json file on [box result](https://competitions.codalab.org/competitions/20794#participate-get-data) & [segm result](https://competitions.codalab.org/competitions/20796#participate-get-data)
 ```
 
 ##### For single-gpu visualize 
