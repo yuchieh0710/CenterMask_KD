@@ -18,6 +18,22 @@ Deep learning has become one of the emerging research fields. In deep learning, 
 ## Installation
 Check [INSTALL.md](INSTALL.md) for installation instructions which is orginate from [CenterMask](https://github.com/youngwanLEE/CenterMask).
 
+## Dataset
+This implementation has been tested on the [MSCOCO](https://cocodataset.org/#download) dataset.
+```bash
+# COCO dataset
+   coco
+     ├─ annotations
+     │   ├─ instances_train2017.json
+     │   ├─ instances_val2017.json
+     │   ├─ image_info_test-dev2017.json
+     │   └─ ...
+     └─ images
+         ├─ 000000000529.jpg
+         ├─ 000000401299.jpg
+         ├─ 000000388903.jpg
+         └─ ... 
+         
 ## Training
 Modify basic training setting in [train_net.py](tools/train_net.py) [``main()``](https://github.com/yuchieh0710/centermask_good/blob/master/tools/train_net.py#L142)
 
